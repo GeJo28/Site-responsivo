@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+html{
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Oxygen";
+}
+
+.content{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix::after, .row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main-header{
+    text-align: center;
+}
+
+.main-header-logo{
+    margin: .5em;
+}
+
+.main-navbar{
+    background-color: #612674;
+    text-align: center;
+}
+
+.main-navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.main-navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    display: block;
+}
+
+.main-navbar a:hover{
+    background-color: #7c3792;
+}
+
+.main-content-section{
+    padding: 1em;
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.icon-play{
+    height: 5em;
+    display: none;
+}
+
+.icon-play img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main-content-section-title{
+    color: #612674;
+    font-size: 1.375em;
+    margin: 1.375em;
+}
+
+.main-content-section-subtitle{
+    color: #a87bb7;
+    font-size: 1em;
+    line-height: 1.4;
+    font-weight: normal;
+}
+
+.button{
+    display: inline-block;
+    padding: .75em 2.5em;
+    background-color: #37a0a0;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: aquamarine;
+    color: rgb(158, 158, 158);
+}
+
+.main-content-middle{
+    padding: 2em;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+
+.main-content-middle span[class^="icon"]{
+    font-size: 3.5em;
+    color: #652e79;
+}
+
+.main-content-middle-title{
+    font-size: 1.25em;
+    color: #652e79;
+    text-transform: uppercase;
+}
+
+.main-content-middle p{
+    line-height: 1.5;
+    color: #222;
+}
+
+.main-content-three{
+    padding: 2em;
+}
+
+.main-content-three-article{
+    margin-bottom: 3.5em;
+}
+
+.main-content-three-title{
+    font-size: 1.25em;
+    color: #652e79;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: normal;
+}
+
+.main-content-three-article p{
+    line-height: 1.2;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+}
+
+.footer{
+    background-color: #251d3b;
+    text-align: center;
+}
+
+.footer-menushare{
+    background-color: #393050;
+    padding: .4em;
+}
+
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1.1em;
+}
+
+.footer p{
+    color: rgb(158, 158, 158);
+    margin-bottom: 0;
+}
+
+
+@media screen and (min-width: 48.75em){
+    .main-header-logo{
+        float: left;
+    }
+
+    .main-navbar{
+        background-color: transparent;
+        float: right;
+        margin-top: 20px;
+    }
+
+    .main-navbar ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-navbar li{
+        display: inline-block;
+    }
+
+    .main-navbar a{
+        color: #713a84;
+        font-weight: 600;
+        transition: transform .2s ease-in-out;
+    }
+
+    .main-navbar a:hover{
+        background-color: transparent;
+        border-bottom: 2px solid #713a84;
+        transform: translateX(20px);
+    }
+
+    .main-content-section{
+        background-color: #521a66;
+        color: white;
+    }
+
+    .icon-play{
+        display: block;
+    }
+
+    .main-content-section-title, .main-content-section-subtitle{
+        color: white;
+    }
+
+    .col-1-4{
+        width: 44%;
+        margin: 3%;
+        float: left;
+    }
+
+    .main-content-three-article .button{
+        float: right;
+    }
+}
+
+
+@media screen and (min-width: 62.5em){
+    .main-content-section{
+        background: #521a66 url(../imagens/bg_topo_1198x670.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        height: 20em;
+        padding-top: 17em;
+    }
+}
+
+@media screen and (min-width: 74em){
+    .icon-play{
+        height: 7em;
+    }
+
+    .main-content-section{
+        background-image: url(../imagens/bg_topo_1600x1374.jpg);
+        padding: 19em 20em 10em;
+        background-position: center top;
+    }
+
+    .col-1-4{
+        width: 23%;
+        margin: 1%;
+    }
+
+    .col-1-2{
+        width: 48%;
+        margin: 1%;
+        float: left;
+    }
+
+    .main-content-three-article .button{
+        float: none;
+    }
+}
